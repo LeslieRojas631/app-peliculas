@@ -10,7 +10,6 @@ body {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 h1 {
@@ -61,7 +60,16 @@ button:hover {
   text-align: left;
 }
 
+#resultContainer {
+  min-height: 100vh;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .movie {
+
   align-items: center;
   min-height: 150px;
   margin-bottom: 10px;
