@@ -4,26 +4,23 @@ let api_key = 'a7ad9206729a237c62612fe0bdc4377a'
 let urlBase = 'https://api.themoviedb.org/3/search/movie'
 let urlImg = 'https://image.tmdb.org/t/p/w200'
 
+let resultContainer = document.getElementById('resultContainer')
+
+
 function searchMovies() {
+    resultContainer.innerHTML = 'Cargando...'
     let searchInput = document.getElementById('searchInput').value
-
-    // Validación para evitar búsqueda vacía
-    if (!searchInput.trim()) {
-        alert("Por favor, escribe algo para buscar.");
-        return;
-    }
-
+    
     fetch(`${urlBase}?api_key=${api_key}&query=${searchInput}`)
         .then(response => response.json())
         .then(response => displayMovies(response.results))
 }
 
 function displayMovies(movies) {
-    let resultContainer = document.getElementById('resultContainer')
     resultContainer.innerHTML = ''
 
     if (movies.length === 0) {
-        resultContainer.innerHTML = '<p> No se encontraron resultados para tu búsqueda <p/>'
+        resultContainer.innerHTML = '<p> No se encontraron resultados para tu búsqueda.<p/>'
         return
     }
 
@@ -48,7 +45,7 @@ function displayMovies(movies) {
         voteAverage.textContent = `⭐ Calificación: ${movie.vote_average}`;
 
         let popularity = document.createElement('p');
-popularity.textContent = `🔥 Popularidad: ${movie.popularity}`;
+        popularity.textContent = `🔥 Popularidad: ${movie.popularity}`;
 
         movieDiv.appendChild(poster)
         movieDiv.appendChild(title)

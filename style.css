@@ -1,70 +1,109 @@
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 15px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #555;
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #c5e2eea9, #c48df8);
+  font-family: 'Nunito', sans-serif;
+  line-height: 200%;
+  transition: background-color 0.3s ease-in-out;
 }
-  
-  #results {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .movie {
-    align-items: center;
-    min-height: 150px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    clear: both;
-  }
-  
-  .movie img {
-    width: 100px;
-    height: 150px;
-    float: left;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-  
-  .movie h2 {
-    font-size: 18px;
-    margin-top: 0;
-    text-align: justify;
-  }
-  
-  .movie p {
-    margin: 5px 0;
-    text-align: justify;
-  }
-  
-  .movie:first-child {
-    margin-top: 20px; 
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+h1 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  color: #9777e1;
+  ;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(59, 17, 86, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #9777e1;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(59, 17, 86, 0.3);
+}
+
+button:hover {
+  background-color: #725ba7;
+  box-shadow: 0 4px 8px rgba(59, 17, 86, 0.3);
+}
+
+#results {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.movie {
+  align-items: center;
+  min-height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  clear: both;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  width: 100px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+  border-style: outset;
+  transition: transform 0.3s ease;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}
+
+.movie h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: justify;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.movie h2:hover {
+  transform: translateY(-5px);
+  color: #9777e1;
+}
+
+.movie p {
+  margin: 5px 0;
+  text-align: justify;
+}
+
+.movie:first-child {
+  margin-top: 20px;
 }
