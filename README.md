@@ -1,7 +1,7 @@
 ## Link para ver resultado: 
 [BUSCADOR PELICULAS FINALIZADO](https://buscador-peliculas-javascript.netlify.app/)
 
-Este es un tutorial que te guiará a través del proceso de creación de una aplicación de buscador de películas utilizando JavaScript. La aplicación utiliza la API de The Movie Database (TMDb) para buscar películas y mostrar sus detalles. A continuación, se proporciona una explicación paso a paso del código JavaScript necesario para que funcione la aplicación.
+Este es una guía a través de la creación de una aplicación de buscador de películas utilizando JavaScript. La aplicación utiliza la API de The Movie Database (TMDb) para buscar películas y mostrar sus detalles. A continuación, se proporciona una explicación paso a paso del código JavaScript necesario para que funcione la aplicación.
 
 ## Paso 1: Configuración de la API
 
